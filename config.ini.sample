@@ -1,10 +1,10 @@
 [pyrogram]
-api_id = YOUR_API  #  (https://docs.pyrogram.org/start/auth)
+api_id = YOUR_API   # (https://docs.pyrogram.org/start/auth)
 api_hash = YOUR_HASH
-bot_token = YOUR_BOT_TOKEN # (https://docs.pyrogram.org/start/auth#bot-authorization)
+bot_token = YOUR_BOT_TOKEN   # (https://docs.pyrogram.org/start/auth#bot-authorization)
 
 [cryptocompare]
 token = YOUR_API   # (https://min-api.cryptocompare.com/)
 
 [telegram]
-channel = YOUR_SHARING_CHANNEL_ID #  (https://docs.pyrogram.org/topics/advanced-usage?highlight=id%20channel#chat-ids)
+channel = YOUR_SHARING_CHANNEL_ID   # (https://docs.pyrogram.org/topics/advanced-usage?highlight=id%20channel#chat-ids)
