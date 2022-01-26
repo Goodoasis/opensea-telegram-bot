@@ -116,7 +116,6 @@ def start_scrape():
     return inlist
 
 if __name__ == '__main__': # For test
-    opensea_sourcelink = "https://opensea.io/collection/metalizards-official?search[sortAscending]=true&search[sortBy]=PRICE"
     sourcelink = SourceLink(opensea_sourcelink, raritycow_sourcelink)
     from pprint import pprint
     u = start_scrape()
