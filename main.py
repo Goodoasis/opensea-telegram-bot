@@ -20,7 +20,7 @@ ETH = namedtuple('ETH', ["USD", "EUR"])
 WETH = namedtuple('WETH', ["USD", "EUR"])
 
 # Get config.ini.
-CRYPTOCOMPARE_TOKEN = config['cryptocompare']['TOKEN']
+CRYPTOCOMPARE_TOKEN = config['cryptocompare']['token']
 CHANNEL = config['telegram']['channel']
 
 
@@ -102,7 +102,7 @@ class Main(Client):
         """Periodic tasks."""
         scheduler = AsyncIOScheduler()
         # Job function is main function to scrape Opensea and send message.
-        scheduler.add_job(self.job, "interval", seconds=60)
+        scheduler.add_job(self.job, "interval", seconds=120)
         # Automatique save.
         scheduler.add_job(self.save_sending, "interval", seconds=600)
         # Update currency price.
